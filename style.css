@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+header{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    color: #112434;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navigation li{
+   list-style: none;
+}
+
+.navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+}
+
+.navigation li a:hover, .navigation li a.active{
+    background: #112434;
+    color: #fff;
+}
+
+
+/*------------
+   parallax
+-------------*/
+
+.parallax{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.parallax img{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    color: #112434;
+}
+
+.about{
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.about h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.about p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+/*footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-md-4 {
+    width: 33.33%;
+  }
+  
+  .col-sm-6 {
+    width: 50%;
+  }
+  
+  .footer-widget {
+    margin-bottom: 20px;
+  }
+  
+  .footer-widget h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-widget p {
+    font-size: 14px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .social-media {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media li a {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .social-media li a:hover {
+    color: #000;
+  }
+  
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+  }*/
+
+  
+
+
+
+/* footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    width: 30%;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .footer-column p {
+    font-size: 14px;
+  }
+  
+  .social-media-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media-links li {
+    display: inline-block;
+  }
+  
+  .social-media-links li a {
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  .social-media-links li a:hover {
+    color: #000;
+  }
+  
+  .footer-copyright {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+ .footer {
+    background-image: url("waves.gif");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  } */
+
+
+  /*footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-md-4 {
+    width: 33.33%;
+  }
+  
+  .col-sm-6 {
+    width: 50%;
+  }
+  
+  .footer-widget {
+    margin-bottom: 20px;
+  }
+  
+  .footer-widget h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+  }
+  
+  .footer-widget p {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+  }
+  
+  .social-media {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media li a {
+    color: #333;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  .social-media li a:hover {
+    color: #000;
+  }
+  
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .social-media li a{
+    text-decoration: none;
+   }*/
+
+   footer {
+    background-color: #111;
+   }
+
+   .footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+   }
+
+   .socialIcons {
+    display: flex;
+    justify-content: center;
+   }
+
+   .socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+   }
+
+   .socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+   }
+
+   /*hower effects on social media icons*/
+
+   .socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+   }
+
+   .socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+   }
+
+   .footerNav {
+    margin: 30px 0;
+   }
+
+   .footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+   }
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+  .designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+
+  @media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+  }
